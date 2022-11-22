@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>数据结构阶段二大作业知识点</title>
+    <link href="/2022/11/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5%E4%BA%8C%E5%A4%A7%E4%BD%9C%E4%B8%9A/"/>
+    <url>/2022/11/19/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%98%B6%E6%AE%B5%E4%BA%8C%E5%A4%A7%E4%BD%9C%E4%B8%9A/</url>
+    
+    <content type="html"><![CDATA[<h3 id="Y-与树相关的知识点"><a href="#Y-与树相关的知识点" class="headerlink" title="Y.与树相关的知识点"></a>Y.与树相关的知识点</h3><h3 id="与树相关的知识点"><a href="#与树相关的知识点" class="headerlink" title="与树相关的知识点"></a>与树相关的知识点</h3><h4 id="1-树的遍历"><a href="#1-树的遍历" class="headerlink" title="1.树的遍历"></a>1.树的遍历</h4><ul><li><h5 id="树的遍历"><a href="#树的遍历" class="headerlink" title="树的遍历"></a>树的遍历</h5><p>先根遍历：根-&gt;左-&gt;右</p><p>后根遍历：左-&gt;右-&gt;根</p></li><li><h5 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h5></li></ul><p>先序遍历：根-&gt;左-&gt;右</p><p>中序遍历：左-&gt;根-&gt;右</p><p>后序遍历：左-&gt;右-&gt;根</p><p>层次遍历：从上到下，从左到右</p><h4 id="2-线索树"><a href="#2-线索树" class="headerlink" title="2.线索树"></a>2.线索树</h4><p>1.先根据二叉树写出遍历顺序</p><p>2.如果该节点既有左孩子又有右孩子，实线指针分别指向左右孩子</p><p>如果该节点只有左孩子，虚线线索指向前驱；</p><p>如果该节点只有右孩子，虚线线索指向后继；</p><p>如果该节点左右孩子都没有，虚线线索指向前驱和后继；</p><p>举个栗子：</p><p><img src="D:\hexo-blog\source_posts\数据结构阶段二大作业\btree.png" alt="btree"></p><p>先序：ABDGHICEJF</p><p>中序：GDHIBAEJCF</p><p>后序：GIHDBJEFCA</p><p>中序线索树</p><p><img src="D:\hexo-blog\source_posts\数据结构阶段二大作业\btree1.png"></p><p>后序线索树</p><p><img src="D:\hexo-blog\source_posts\数据结构阶段二大作业\btree2.png"></p><h4 id="3-哈夫曼树"><a href="#3-哈夫曼树" class="headerlink" title="3.哈夫曼树"></a>3.哈夫曼树</h4><p>定义：带权路径长度最短的二叉树</p><p>哈夫曼树的构建：先把给的数从小到大排序，每次找最小的两个数，生成树，然后递归构建哈夫曼树（注意小数在左，大数在右）</p><p>哈夫曼编码：在哈夫曼树的基础上，左0右1，然后从上到下读数。</p><p>带权路径长度WPL：所有叶节点的权值x该节点到根节点的路径长度之和</p><p><img src="D:\hexo-blog\source_posts\数据结构阶段二大作业\huffmantree.png"></p><h4 id="4-二叉树，树，森林的转换"><a href="#4-二叉树，树，森林的转换" class="headerlink" title="4.二叉树，树，森林的转换"></a>4.二叉树，树，森林的转换</h4><ul><li><h5 id="树转二叉树"><a href="#树转二叉树" class="headerlink" title="树转二叉树"></a>树转二叉树</h5><p>加线：在兄弟节点间加线</p><p>删线：删掉每个结点除第一个孩子间的线</p><p>旋转：顺时针转一定角度</p></li><li><h5 id="森林转二叉树"><a href="#森林转二叉树" class="headerlink" title="森林转二叉树"></a>森林转二叉树</h5><p>把森林中的每棵树转成二叉树</p><p>把从第二棵树开始的每棵树作为前一棵树的右子树</p></li><li><h5 id="二叉树转树"><a href="#二叉树转树" class="headerlink" title="二叉树转树"></a>二叉树转树</h5><p>加线：二叉树中的结点如果有左孩子，连接该节点左孩子的所有右孩子</p><p>删线：删除被连接的右孩子与原二叉树的连线</p></li><li><h5 id="二叉树转森林"><a href="#二叉树转森林" class="headerlink" title="二叉树转森林"></a>二叉树转森林</h5><p>删线：把每个结点与右孩子的结点连线删掉，得n个二叉树</p><p>二叉树转树</p></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>专业课</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>KMP字符串</title>
     <link href="/2022/11/18/KMP%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     <url>/2022/11/18/KMP%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
